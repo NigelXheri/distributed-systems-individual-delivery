@@ -1,3 +1,5 @@
+.gitignore
+
 p1/downloads/*
 !p1/downloads/
 p1/documentroot/*
