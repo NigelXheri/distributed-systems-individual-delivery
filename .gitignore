@@ -1,0 +1,4 @@
+p1/downloads/*
+!p1/downloads/
+p1/documentroot/*
+!p1/documentroot/README.txt

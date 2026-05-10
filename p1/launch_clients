@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <number_of_clients> <requests_file> <max_chunk_size>"
+    exit
+fi
+
+for i in $(seq 1 $1); do
+    ./launch_client $i $2 "Client$i" $3 &
+done
