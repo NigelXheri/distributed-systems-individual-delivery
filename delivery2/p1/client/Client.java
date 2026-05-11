@@ -131,7 +131,6 @@ static void downloadFile(Channel channel, ClientImpl cli, String filename, Strin
             msg = "Client_" + id + " EXISTFILE " + filename;
             channel.basicPublish("", QUEUE_NAME, null, msg.getBytes());
             if (!cli.getExistFile()) {
-                System.out.println("Client_" + id + ": File " + filename + " does not exist");
                 return;
             }
 
