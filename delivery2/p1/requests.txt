@@ -1,3 +1,0 @@
-page.html
-hello.txt
-photo2.jpg
